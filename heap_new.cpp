@@ -44,8 +44,8 @@ void build_max_heap(int* arr, int size)
         max_heapify(arr, size, i);
         // printArray(arr, size);
     }
-
 }
+
 void max_heapSort(int *arr, int size){
     int size_cp = size;
     for(int i = 0 ; i<size_cp ; i++){

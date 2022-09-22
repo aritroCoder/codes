@@ -9,9 +9,9 @@ Partition algo:
 1. maintain a pointer j that iterates through the array.
 2. maintain a pointer i that starts at the place before begining the array.
 3. start the loop. Whenever we encounter a element whose value is less than the value of last element,increment i by 1 and swap array[i] with array[j].
-4. after j has reached the end of the array, again increment i by 1 and swap array[i] with array[j].
-5. This will create a partitioned array with i+1 th element as pivot.
-6. Return i+1.
+4. after j has reached the end of the array, again increment i by 1 and swap array[i] with array[j] (as we took last element of array as pivot)
+5. This will create a partitioned array with i th element as pivot.
+6. Return i.
 **/
 
 int partition(int *arr, int start, int end)
